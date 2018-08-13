@@ -1,0 +1,169 @@
+/*
+* Simple responsive sidebar for Bootstrap 3
+* Author: Gozoro <gozoro@yandex.ru>
+* Version: 0.0.1
+*/
+
+.row > .sidebar{
+	position: fixed;
+	width:230px;
+	left:-400px;
+	top:0;
+	bottom: 0;
+	padding: 50px 10px 0 10px;
+	background: #fff;
+	box-shadow: 4px 4px 4px #333;
+	overflow-y: auto;
+	z-index:900;
+}
+
+.row > .content{
+	min-height: 100%;
+	overflow: hidden
+}
+
+
+
+.row > .col-xs-sidebar{
+	position: static;
+	float:left;
+	box-shadow: none;
+	padding: 0 10px 0 0;
+}
+
+.row > .col-xs-sidebar.fixed{
+	position: fixed;
+	left:0px;
+	box-shadow: none;
+	padding:61px 10px 0 0;
+}
+
+.row > .col-xs-content{
+	margin-left: 230px;
+	overflow: inherit;
+}
+
+
+.row > .sidebar.open{
+	top:0;
+	bottom: 0;
+	z-index: 20000;
+	padding: 0 10px 0 10px;
+}
+
+.row > .sidebar.open.fixed{
+	padding: 0 10px 0 10px;
+}
+
+
+
+
+.sidebar-toggle{
+	position: fixed;
+	display: block;
+	border:0px;
+	width: 40px;
+	height: 50px;
+	top: 102px;
+	left: -25px;
+	box-shadow: 4px 1px 8px gray;
+	font-size: 20px;
+	color: #fff;
+	padding: 4px 0 0 9px;
+	background: #3770a6;
+	cursor: pointer;
+	border-radius: 0 4px 4px 0;
+	z-index:999;
+}
+
+.sidebar-toggle:hover{
+	background-color: #3e7eba;
+	left:0px;
+	box-shadow: 4px 1px 16px gray;
+	padding: 4px 5px 0 9px;
+}
+
+
+.modal-backdrop{
+	cursor: pointer;
+}
+
+
+
+
+
+
+/* sm
+--------------------------------------------------*/
+@media screen and (min-width: 768px) {
+
+	.row > .col-sm-sidebar{
+		position: static;
+		float:left;
+		box-shadow: none;
+		padding: 0 10px 0 0;
+	}
+
+	.row > .col-sm-sidebar.fixed{
+		position: fixed;
+		left:15px;
+		box-shadow: none;
+		padding:61px 10px 0 0;
+	}
+
+	.row > .col-sm-content{
+		margin-left: 230px;
+	}
+
+
+
+}
+
+/* md
+--------------------------------------------------*/
+@media screen and (min-width: 992px) {
+
+	.row > .col-md-sidebar{
+		position: static;
+		float:left;
+		box-shadow: none;
+		padding: 0 10px 0 0;
+	}
+
+	.row > .col-md-sidebar.fixed{
+		position: fixed;
+		left:15px;
+		box-shadow: none;
+		padding:61px 10px 0 0;
+	}
+
+	.row > .col-md-content{
+		margin-left: 230px;
+	}
+
+}
+
+
+/* lg
+--------------------------------------------------*/
+@media screen and (min-width: 1200px) {
+
+
+	.row > .col-lg-sidebar{
+		position: static;
+		float:left;
+		box-shadow: none;
+		padding: 0 10px 0 0;
+	}
+
+	.row > .col-lg-sidebar.fixed{
+		position: fixed;
+		left:15px;
+		box-shadow: none;
+		padding:61px 10px 0 0;
+	}
+
+	.row > .col-lg-content{
+		margin-left: 230px;
+	}
+}

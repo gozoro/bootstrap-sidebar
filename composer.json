@@ -1,0 +1,17 @@
+{
+	"name": "gozoro/bootstrap-sidebar",
+	"description": "Simple responsive sidebar for Bootstrap 3",
+	"keywords":[
+		"sidebar",
+		"bootstrap"
+	],
+	"homepage": "https://github.com/gozoro/bootstrap-sidebar",
+	"type": "component",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Gozoro",
+			"email": "gozoro@yandex.ru"
+		}
+	]
+}
