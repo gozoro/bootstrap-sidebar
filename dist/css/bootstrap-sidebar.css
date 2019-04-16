@@ -1,7 +1,7 @@
 /*
 * Simple responsive sidebar for Bootstrap 3
 * Author: Gozoro <gozoro@yandex.ru>
-* Version: 0.0.2
+* Version: 0.0.3
 
 */
 
@@ -106,6 +106,7 @@
 
 	.row > .col-sm-sidebar.fixed{
 		position: fixed;
+		left:0;
 		box-shadow: none;
 	}
 
@@ -130,6 +131,7 @@
 
 	.row > .col-md-sidebar.fixed{
 		position: fixed;
+		left:0;
 		box-shadow: none;
 	}
 
@@ -154,6 +156,7 @@
 
 	.row > .col-lg-sidebar.fixed{
 		position: fixed;
+		left:0;
 		box-shadow: none;
 	}
 
