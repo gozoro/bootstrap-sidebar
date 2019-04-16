@@ -2,6 +2,7 @@
 * Simple responsive sidebar for Bootstrap 3
 * Author: Gozoro <gozoro@yandex.ru>
 * Version: 0.0.2
+* 
 */
 
 (function()
