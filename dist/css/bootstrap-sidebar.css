@@ -1,13 +1,13 @@
 /*
 * Simple responsive sidebar for Bootstrap 3
 * Author: Gozoro <gozoro@yandex.ru>
-* Version: 0.0.1
+* Version: 0.0.2
 */
 
 .row > .sidebar{
 	position: fixed;
 	width:230px;
-	left:-400px;
+	left:-9999px;
 	top:0;
 	bottom: 0;
 	padding: 50px 10px 0 10px;
@@ -33,9 +33,8 @@
 
 .row > .col-xs-sidebar.fixed{
 	position: fixed;
-	left:0px;
+	left:0;
 	box-shadow: none;
-	padding:61px 10px 0 0;
 }
 
 .row > .col-xs-content{
@@ -106,9 +105,7 @@
 
 	.row > .col-sm-sidebar.fixed{
 		position: fixed;
-		left:15px;
 		box-shadow: none;
-		padding:61px 10px 0 0;
 	}
 
 	.row > .col-sm-content{
@@ -132,9 +129,7 @@
 
 	.row > .col-md-sidebar.fixed{
 		position: fixed;
-		left:15px;
 		box-shadow: none;
-		padding:61px 10px 0 0;
 	}
 
 	.row > .col-md-content{
@@ -158,9 +153,7 @@
 
 	.row > .col-lg-sidebar.fixed{
 		position: fixed;
-		left:15px;
 		box-shadow: none;
-		padding:61px 10px 0 0;
 	}
 
 	.row > .col-lg-content{
