@@ -1,7 +1,7 @@
 /*
 * Simple responsive sidebar for Bootstrap 3
 * Author: Gozoro <gozoro@yandex.ru>
-* Version: 0.0.3
+* Version: 0.0.4
 *
 */
 
@@ -31,7 +31,7 @@
 	{
 		$('.modal-backdrop').remove();
 		$('.sidebar')
-			.animate({'left':'-400px'}, 300, function()
+			.animate({'left':'-9999px'}, 300, function()
 			{
 
 				$('body').removeClass('modal-open');

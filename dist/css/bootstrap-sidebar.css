@@ -1,8 +1,7 @@
 /*
 * Simple responsive sidebar for Bootstrap 3
 * Author: Gozoro <gozoro@yandex.ru>
-* Version: 0.0.3
-
+* Version: 0.0.4
 */
 
 .row > .sidebar{
@@ -29,7 +28,7 @@
 	position: static;
 	float:left;
 	box-shadow: none;
-	padding: 0 10px 0 0;
+	padding: 0 10px 0 10px;
 }
 
 .row > .col-xs-sidebar.fixed{
@@ -101,7 +100,7 @@
 		position: static;
 		float:left;
 		box-shadow: none;
-		padding: 0 10px 0 0;
+		padding: 0 10px 0 10px;
 	}
 
 	.row > .col-sm-sidebar.fixed{
@@ -126,7 +125,7 @@
 		position: static;
 		float:left;
 		box-shadow: none;
-		padding: 0 10px 0 0;
+		padding: 0 10px 0 10px;
 	}
 
 	.row > .col-md-sidebar.fixed{
@@ -151,7 +150,7 @@
 		position: static;
 		float:left;
 		box-shadow: none;
-		padding: 0 10px 0 0;
+		padding: 0 10px 0 10px;
 	}
 
 	.row > .col-lg-sidebar.fixed{
