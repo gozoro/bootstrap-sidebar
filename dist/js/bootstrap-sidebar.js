@@ -1,7 +1,7 @@
 /*
 * Simple responsive sidebar for Bootstrap 3
 * Author: Gozoro <gozoro@yandex.ru>
-* Version: 1.0.0
+* Version: 1.0.1
 *
 */
 
@@ -96,40 +96,27 @@
 		var RIGHT_WIDTH = $('.sidebar.right').outerWidth();
 
 
-		var media = "@media screen and ";
-		var style = "<style>"
 
-			+ media + "(min-width:1200px){"
-			+(LEFT_WIDTH  ? ".sidebar-lg.left ~ .content{margin-left:"  +LEFT_WIDTH +"px}":"")
-			+(RIGHT_WIDTH ? ".sidebar-lg.right ~ .content{margin-right:"+RIGHT_WIDTH+"px}":"")
-			+"}"
 
-			+ media + "(min-width: 992px){"
-			+(LEFT_WIDTH  ?  ".sidebar-md.left ~ .content{margin-left:" +LEFT_WIDTH +"px}":"")
-			+(RIGHT_WIDTH ? ".sidebar-md.right ~ .content{margin-right:"+RIGHT_WIDTH+"px}":"")
-			+"}"
 
-			+ media + "(min-width: 768px){"
-			+(LEFT_WIDTH  ? ".sidebar-sm.left ~ .content{margin-left:"  +LEFT_WIDTH +"px}":"")
-			+(RIGHT_WIDTH ? ".sidebar-sm.right ~ .content{margin-right:"+RIGHT_WIDTH+"px}":"")
-			+"}"
+		var mediaTypes = {
+			lg: "(min-width:1200px)",
+			md: "(min-width: 992px)",
+			sm: "(min-width: 768px)",
+			xs: "(max-width: 767px)",
+			xsl:"(min-width:481px) and (max-width: 767px)", // xs landscape
+			xsp:"(max-width: 480px)" // xs portrait
+		};
 
-			+ media + "(max-width: 767px){"
-			+(LEFT_WIDTH  ? ".sidebar-xs.left ~ .content{margin-left:"  +LEFT_WIDTH +"px}":"")
-			+(RIGHT_WIDTH ? ".sidebar-xs.right ~ .content{margin-right:"+RIGHT_WIDTH+"px}":"")
-			+"}"
-
-			+ media + "(min-width:481px) and (max-width: 767px){"
-			+(LEFT_WIDTH  ? ".sidebar-xsl.left ~ .content{margin-left:"  +LEFT_WIDTH +"px}":"")
-			+(RIGHT_WIDTH ? ".sidebar-xsl.right ~ .content{margin-right:"+RIGHT_WIDTH+"px}":"")
-			+"}"
-
-			+ media + "(max-width: 480px){"
-			+(LEFT_WIDTH  ? ".sidebar-xsp.left ~ .content{margin-left:"  +LEFT_WIDTH +"px}":"")
-			+(RIGHT_WIDTH ? ".sidebar-xsp.right ~ .content{margin-right:"+RIGHT_WIDTH+"px}":"")
-			+"}"
-
-			+ "</style>";
+		var style = "<style>";
+		for(var screenType in mediaTypes)
+		{
+			style += "@media screen and " + mediaTypes[screenType] + "{"
+			+(LEFT_WIDTH  ? ".sidebar-"+screenType+".left ~ .content{margin-left:"  +LEFT_WIDTH +"px}":"")
+			+(RIGHT_WIDTH ? ".sidebar-"+screenType+".right ~ .content{margin-right:"+RIGHT_WIDTH+"px}":"")
+			+"}";
+		}
+		style += "</style>";
 
 		$body.append(style);
 
