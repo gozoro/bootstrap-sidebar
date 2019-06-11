@@ -22,7 +22,6 @@
 }
 
 .sidebar, .sidebar.left {
-	width: 200px; /* Default width */
 	padding: 10px 10px; /* Default sidebar padding */
 	left:0;
 	height: 100vh;
@@ -30,7 +29,6 @@
 
 
 .sidebar.right {
-	width: 200px; /* Default width */
 	right: 0;
 	left:auto;
 }
